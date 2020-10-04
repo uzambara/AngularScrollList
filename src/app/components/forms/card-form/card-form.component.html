@@ -1,0 +1,12 @@
+<form class="card-form">
+  <label class="card-form__label" for="title">Title</label>
+  <input autocomplete="off" class="card-form__input" id="title" type="text" [value]="card.title" (change)="onTitleChange($event.target)"/>
+
+  <label class="card-form__label" for="description">Title</label>
+  <textarea class="card-form__input card-form__input--description" id="description" [value]="card.description" (change)="onDescriptionChange($event.target)"></textarea>
+
+  <div class="card-form__buttons-wrapper">
+    <button class="card-form__button card-form__button--save" (click)="onSaveButtonClick()">Save</button>
+    <button class="card-form__button card-form__button--delete" *ngIf="isEditMode" (click)="onDeleteButtonClick()">Delete</button>
+  </div>
+</form>

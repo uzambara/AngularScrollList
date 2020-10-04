@@ -1,0 +1,12 @@
+<div class="card-info-page">
+  <h1 class="card-info-page__title">Card info</h1>
+  <div class="card-info-page__card-form">
+    <app-card-form
+      [card]="card"
+      [isEditMode]="true"
+      (saveButtonCLick)="onSaveButtonClick($event)"
+      (deleteButtonCLick)="onDeleteButtonClick($event)"
+    ></app-card-form>
+  </div>
+</div>
+

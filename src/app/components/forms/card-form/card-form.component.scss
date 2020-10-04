@@ -1,0 +1,34 @@
+.card-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 250px;
+  padding: 20px 25px;
+  border: 1px solid black;
+  background-color: lightgray;
+
+  &__label {
+    display: none;
+  }
+
+  &__input {
+    margin-bottom: 10px;
+
+    &--description {
+      min-height: 100px;
+      margin-bottom: 20px;
+    }
+  }
+
+  &__button {
+    padding: 5px 10px;
+  }
+
+  &__button--save {
+    margin-right: 30px;
+  }
+
+  &__buttons-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+}

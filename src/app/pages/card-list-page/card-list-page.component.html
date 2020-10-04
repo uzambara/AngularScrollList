@@ -1,0 +1,13 @@
+<div class="card-list-page">
+  <h1 class="card-list-page__title">Card list</h1>
+  <ul #cardList class="card-list-page__card-list card-list">
+    <li class="card-list__add-item card-list__item">
+      <a routerLink="/create"><img class="card-list__add-img" src="assets/img/icons/add.png" alt="add"></a>
+    </li>
+    <li class="card-list__item" *ngFor="let card of cards">
+      <app-card [card]="card"></app-card>
+    </li>
+  </ul>
+</div>
+
+

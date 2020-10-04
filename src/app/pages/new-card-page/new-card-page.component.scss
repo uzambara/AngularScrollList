@@ -1,0 +1,12 @@
+.new-card-page {
+  padding-top: 100px;
+
+  &__title {
+    text-align: center;
+  }
+
+  &__card-form {
+    display: flex;
+    justify-content: center;
+  }
+}

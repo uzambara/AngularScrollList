@@ -1,0 +1,22 @@
+.card {
+  border: 1px solid grey;
+  padding: 10px 15px;
+  display: flex;
+  flex-direction: column;
+  min-width: 200px;
+  min-height: 200px;
+}
+
+.card__title {
+  margin: 0;
+}
+
+.card__content {
+  margin-bottom: 20px;
+  flex-grow: 1;
+}
+
+.card__footer {
+  display: flex;
+  justify-content: space-between;
+}
